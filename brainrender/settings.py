@@ -26,6 +26,6 @@ ROOT_COLOR = [0.8, 0.8, 0.8]  # color of the overall brain model's actor
 ROOT_ALPHA = 0.2  # transparency of the overall brain model's actor'
 SCREENSHOT_SCALE = 1
 SHADER_STYLE = "cartoon"  # affects the look of rendered brain regions: [metallic, plastic, shiny, glossy]
-SHOW_AXES = True
+SHOW_AXES = False
 WHOLE_SCREEN = True  # If true render window is full screen
 OFFSCREEN = False
