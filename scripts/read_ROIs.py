@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from brainrender import Scene, actor
+from brainrender import Scene, actor, Animation
 
 from rich import color, print
 from myterial import orange
@@ -32,4 +32,19 @@ for cur_idx, cur_mesh in enumerate(meshes):
 # scene.add_brain_region("VISp", "MOs", alpha=0.2, color="green")
 
 # Render!
-scene.render(camera='sagittal',zoom=2.0)
+#scene.render(camera='sagittal', zoom=2.0)
+scene.screenshot(name=os.path.join(paths['data'], 'saggital_screenshot.png'))
+# Animation
+
+anim = Animation(scene, paths['data'], "ROI_inj_animation")
+# Specify camera position and zoom at some key frames
+# each key frame defines the scene's state after n seconds have passed
+anim.add_keyframe(0, camera="top", zoom=0.7)
+anim.add_keyframe(1, camera="sagittal", zoom=0.5)
+anim.add_keyframe(2, camera="frontal", zoom=0.7)
+anim.add_keyframe(
+    3,
+    camera="frontal",
+)
+# Make videos
+anim.make_video(duration=3, fps=10)

@@ -177,4 +177,4 @@ venv.bak/
 *.~lock.*
 
 # data folder
-scripts/data/meshes/
+scripts/data/
