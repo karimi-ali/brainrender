@@ -11,7 +11,7 @@ vsettings.useDepthPeeling = True
 
 
 # For transparent background with screenshots
-vsettings.screenshotTransparentBackground = True  # vedo for transparent bg
+vsettings.screenshotTransparentBackground = False # vedo for transparent bg
 vsettings.useFXAA = False  # This needs to be false for transparent bg
 
 
