@@ -7,5 +7,7 @@
 			"path": "../alik/python"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "/Users/karimia/anaconda3/envs/brainRender/bin/python"
+	}
 }

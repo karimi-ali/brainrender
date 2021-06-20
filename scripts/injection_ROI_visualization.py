@@ -31,7 +31,7 @@ for cur_idx, cur_mesh in enumerate(meshes):
     scene.add_silhouette(cur_actor)
 
 # You can specify color, transparency...
-# scene.add_brain_region("VISp", "MOs", alpha=0.2, color="green")
+# scene.add_brain_region("CTX", alpha=0.2, color="green")
 
 # Render and save screen shots
 screen_shot_dir = os.path.join(paths['data'], 'screen_shots')
@@ -45,7 +45,7 @@ for idx, c in enumerate(camera_names):
 # Animation
 animate_flag = True
 if animate_flag: 
-    anim = Animation(scene, screen_shot_dir, "ROI_inj_animation")
+    anim = Animation(scene, screen_shot_dir, "ROI_inj_animation",size="3240x2100")
     # Specify camera position and zoom at some key frames
     # each key frame defines the scene's state after n seconds have passed
     anim.add_keyframe(0, camera="top", zoom=0.3)
