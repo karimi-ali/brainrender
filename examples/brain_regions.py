@@ -13,7 +13,8 @@ scene = Scene(title="brain regions")
 scene.add_brain_region("TH")
 
 # You can specify color, transparency...
-scene.add_brain_region("MOs", "CA1", alpha=0.2, color="green")
+scene.add_brain_region("SSp-tr", alpha=0.2, color="green")
+scene.add_brain_region("PTLp", alpha=0.2, color="red")
 
 # Render!
 scene.render()

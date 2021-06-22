@@ -36,15 +36,15 @@ for cur_idx, cur_mesh in enumerate(meshes):
     scene.add(cur_actor)
     scene.add_silhouette(cur_actor)
     # Overlapping atlas
-    cur_overlapping_acronyms = list(csv_atlas_acronym[cur_idx]["acronym_individual"])
-    scene.add_brain_region(*cur_overlapping_acronyms, 
-                           alpha=0.2,
-                           color=colors[cur_idx],
-                           hemisphere='left')
+    cur_overlapping_acronyms = list(csv_atlas_acronym[cur_idx]["acronym_keepSingleChild"])
+   # scene.add_brain_region(*cur_overlapping_acronyms, 
+   #                        alpha=0.2,
+   #                        color=colors[cur_idx],
+   #                        hemisphere='right')
 
 
 # Render and save screen shots
-screen_shot_dir = os.path.join(paths['data'], 'screen_shots')
+screen_shot_dir = os.path.join(paths['data'], 'screen_shots_no_region')
 os.makedirs(screen_shot_dir, exist_ok = True) 
 camera_names = list(brainrender.camera.cameras.keys())
 zoom_vals = [2.0, 0.8, 1.0, 1.0, 1.0, 1.0]
