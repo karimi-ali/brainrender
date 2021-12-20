@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../brainrender"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/Users/karimia/anaconda3/envs/lrspy/bin/python"
+	}
+}
